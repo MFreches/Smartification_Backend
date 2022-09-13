@@ -6,7 +6,7 @@ To build and run this project it is necessary an IDE, I recommend Visual Studio 
 Instalation:
   - Install python latest version (https://www.python.org/downloads/)
   - Install pip:
-    - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.pycurl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
     - python get-pip.py
   - Install NLTK ( pip install nltk )
   - Install Numpy ( pip install numpy )
