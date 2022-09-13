@@ -1,18 +1,12 @@
 from base64 import decode
 import json
 from urllib import response
-import spacy
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import requests
 
 tosend = []
 sbert_model = SentenceTransformer('bert-base-nli-mean-tokens')
-# file1 = open("teste.txt", "r")
-# sentences = file1.readlines()
-# file1.close()
-# Tokenization of each document
-# split_sentence = sentences.split("////")
 
 
 def cosine(u, v):
@@ -25,7 +19,6 @@ def similiraty(tag):
     sentences = json.loads(response.text)
     print(sentences)
     tosend = []
-    # nlp = spacy.load('en_core_web_md')
     desc = sbert_model.encode([tag])[0]
     bestSim = -1
     bestRes = ''

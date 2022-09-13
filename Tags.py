@@ -1,9 +1,6 @@
-from ctypes import sizeof
 import nltk
-# nltk.download()
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, sent_tokenize
-from numpy.lib.type_check import real
+from nltk.tokenize import sent_tokenize
 
 
 def Tagsfunction(fname):
